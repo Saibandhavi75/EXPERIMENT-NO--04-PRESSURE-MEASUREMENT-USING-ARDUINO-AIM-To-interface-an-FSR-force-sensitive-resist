@@ -60,10 +60,12 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 ### FIGURE-03 CIRCUIT DIAGRAM
 
+![output](https://github.com/Saibandhavi75/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/ex21.png?raw=true)
+
 
 
 ### PROCEDURE:
-```
+
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
@@ -74,7 +76,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
 10.	Plot the graph for the output voltage vs the resistance 
-```
+
 
 ### PROGRAM 
 
@@ -119,7 +121,11 @@ void loop()
 
 
 ### TABLE -02 standard deviation table 
+
+![output](https://github.com/Saibandhavi75/EXPERIMENT-NO--04-PRESSURE-MEASUREMENT-USING-ARDUINO-AIM-To-interface-an-FSR-force-sensitive-resist/blob/main/ex4.png?raw=true)
+
 ### Population Standard Deviation
+```
 The population standard deviation, the standard definition of σ, is used when an entire population can be measured, and is the square root of the variance of a given data set. In cases where every member of a population can be sampled, the following equation can be used to find the standard deviation of the entire population:
 
 
@@ -135,19 +141,7 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 σ = √[(1 - 4.6)2 + (3 - 4.6)2 + ... + (8 - 4.6)2)]/5
 σ = √(12.96 + 2.56 + 0.36 + 5.76 + 11.56)/5 = 2.577
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 ### RESULTS : 
 Arduino uno is interfaced with FSR and output values are indicated on a graph.
