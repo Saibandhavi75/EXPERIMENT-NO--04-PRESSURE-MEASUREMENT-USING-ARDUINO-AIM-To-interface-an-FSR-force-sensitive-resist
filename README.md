@@ -63,6 +63,7 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 
 
 ### PROCEDURE:
+```
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
@@ -73,19 +74,38 @@ The easiest way to measure a resistive sensor is to connect one end to power and
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
 10.	Plot the graph for the output voltage vs the resistance 
-
+```
 
 ### PROGRAM 
- *your roll no 
- * your name 
- * department and year 
+
+```
+ Roll no : 212221240006
+ Name : Aruru Sai Bandhavi
+ Department : Artificial Intelligence and Machine Learning
+
+
+
+int sensorvalue=A0;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  sensorvalue= analogRead(A0);
+  int n=map(sensorvalue,0,466,0,10);
+  delay(100);
+  Serial.print("Raw Values = ");
+  Serial.println(sensorvalue);
+  Serial.print("Force = ");
+  Serial.println(n);
+  delay(100);
  
- 
- 
- 
- 
- 
- 
+} 
+```
  
  
  
@@ -129,4 +149,5 @@ EX:           μ = (1+3+4+7+8) / 5 = 4.6
 
 
 
-### RESULTS : Arduino uno is interfaced with FSR and output values are indicated on a graph.
+### RESULTS : 
+Arduino uno is interfaced with FSR and output values are indicated on a graph.
